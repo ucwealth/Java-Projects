@@ -1,4 +1,5 @@
 import com.cstore.model.Applicant;
+import com.cstore.model.Cashier;
 import com.cstore.model.Product;
 import com.cstore.storeEnums.Qualification;
 
@@ -12,6 +13,10 @@ public class Main {
 
         Applicant newCashier = new Applicant("100", "Lauren German", 28, Qualification.BSc);
         System.out.println(newCashier.toString());
+
+
+        Product myProduct = new Product(2, "Yam Flour", 3500.50 );
+        Cashier madu = new Cashier("Maduabuchi", myProduct);
     }
 
 }

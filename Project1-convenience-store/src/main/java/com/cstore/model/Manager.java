@@ -15,10 +15,4 @@ public class Manager extends Staff implements ManagerInterface {
         return "Time to interview this applicant " + applicant.getName();
     }
 
-//    public String hireCashier() {
-//        var resultString = "I just hired a cashier called " + cashier.getName();
-////		System.out.println(resultString);
-//        return resultString;
-//    }
-
 }

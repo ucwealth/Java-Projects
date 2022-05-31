@@ -1,20 +1,19 @@
 package com.cstore.model;
 
+import com.cstore.storeEnums.Qualification;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
-class ManagerTest extends Staff {
-
-    @org.junit.jupiter.api.Test
-    void hireCashier() {
-        Product myProduct = new Product(2, "Yam Flour", 3500.50 );
-        Cashier madu = new Cashier("Maduabuchi", myProduct);
-        Applicant newCashier = new Applicant(9, "Victor NewMan", 56, "None");
-        Manager manager = new Manager();
-        String output = manager.hireCashier();
-        System.out.print(output);
-        assertEquals("I just hired a cashier called Maduabuchi", output);
-    }
-}
+//class ManagerTest extends Staff {
+//    Applicant newCashier = new Applicant("9", "Victor NewMan", 56, Qualification.HND);
+//    @org.junit.jupiter.api.Test
+//    String hireCashier() {
+//        Manager manager = new Manager(newCashier);
+//        String output = manager.hireCashier(newCashier);
+//        System.out.print(output);
+////        return output;
+//        assertEquals("Time to interview this applicant Victor NewMan", output);
+//    }
+//}
