@@ -9,9 +9,10 @@ class ManagerTest extends Staff {
 
     @org.junit.jupiter.api.Test
     void hireCashier() {
-        Product myProduct = new Product("Yam");
+        Product myProduct = new Product(2, "Yam Flour", 3500.50 );
         Cashier madu = new Cashier("Maduabuchi", myProduct);
-        Manager manager = new Manager(madu);
+        Applicant newCashier = new Applicant(9, "Victor NewMan", 56, "None");
+        Manager manager = new Manager();
         String output = manager.hireCashier();
         System.out.print(output);
         assertEquals("I just hired a cashier called Maduabuchi", output);

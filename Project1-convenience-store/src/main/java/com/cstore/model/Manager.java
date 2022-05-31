@@ -1,17 +1,24 @@
 package com.cstore.model;
 
-public class Manager extends Staff {
-    private Cashier cashier;
+import com.cstore.service.ManagerInterface;
 
-    public Manager(Cashier cashier) {
+public class Manager extends Staff implements ManagerInterface {
+    private Applicant applicant;
+
+    public Manager(Applicant applicant) {
         super();
-        this.cashier = cashier;
+        this.applicant = applicant;
     }
 
-    public String hireCashier() {
-        var resultString = "I just hired a cashier called " + cashier.getName();
-//		System.out.println(resultString);
-        return resultString;
+    @Override
+    public String hireCashier(Applicant applicant) {
+        return "Time to interview this applicant " + applicant.getName();
     }
+
+//    public String hireCashier() {
+//        var resultString = "I just hired a cashier called " + cashier.getName();
+////		System.out.println(resultString);
+//        return resultString;
+//    }
 
 }
